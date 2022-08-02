@@ -2,24 +2,82 @@ html, body {
     margin: 0;
 }
 
+button {
+    width: 150px;
+    height: 75px;
+    border: solid 3px #395B64;
+    border-radius: 10px;
+    font-size: 22px
+}
+
+button:hover {
+    background-color: lightgrey;
+}
+
+
 .title {
     text-align: center;
     background-color: black;
     color: white;
+    margin-bottom: 100px;
 }
 
 .main-container {
     display: flex;
-    justify-content: space-between;
+    flex-shrink: 1;
+    justify-content: center;
     align-items: center;
-    padding: 50px;
+    gap: 100px;
 }
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: lightgrey;
+    outline: none;
+    transition: 0.2s;
+    border-radius: 6px;
+  }
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 
 .drawing-container {
     display: flex;
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
     border: solid 2px black;
+    flex-shrink: 1;
 }
 
 .pixel {

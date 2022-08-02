@@ -16,11 +16,21 @@
 
     <div class="main-container">
         <div class="menu-bar">
-            <h2>Menu goes here</h2>
+            <button id='black-btn' type="button">Black</button>
+            <button id='rainbow-btn' type="button">Rainbow</button>
+            <button id='choose-btn' type="button">Choose <input type='color' id='colorpicker' value='#0000ff'></button>
+            <button id='eraser-btn' type="button">Eraser</button>
+            <button id='clear-btn' type="button">Clear</button>
         </div>
-
-        <div class="drawing-container"></div>
+        <div class="right-container">
+            <div class="drawing-container"></div>
+            <div class="slider-container">
+                <input type="range" min="4" max="100" value="16", class="slider">
+            </div>
+        </div>
     </div>
+
+    
 
     <div class="footer">
         <h4>Check out my other projects <a href='#'>here!</a></h4>
