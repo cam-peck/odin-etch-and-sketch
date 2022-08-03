@@ -1,5 +1,6 @@
-html, body {
+* {
     margin: 0;
+    padding: 0;
 }
 
 button {
@@ -20,6 +21,7 @@ button:hover {
     background-color: black;
     color: white;
     margin-bottom: 100px;
+    padding: 20px;
 }
 
 .main-container {
@@ -71,6 +73,10 @@ button:hover {
     cursor: pointer;
 }
 
+#valBox {
+    font-size: 22px;
+    padding-right: 10px;
+}
 
 .drawing-container {
     display: flex;
@@ -87,8 +93,4 @@ button:hover {
 
 .column {
     border: 0;
-}
-
-.footer {
-    padding-top: 100px;
 }
